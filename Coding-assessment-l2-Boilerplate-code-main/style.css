@@ -1,0 +1,238 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.product-vendor, .Infoo {
+  color: grey;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.product-details h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.product-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-container, .product-price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.compare-at-price {
+  text-decoration: line-through;
+}
+
+.price {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #3A4980;
+}
+
+.product-price span:first-child {
+  font-size: 24px;
+}
+
+.product-price span:last-child {
+  font-size: 36px;
+  margin-left: 5px;
+}
+
+.product-colors {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.thumbnails{
+  display: flex;
+
+}
+.thumbnails img{
+  width: 150px;
+  height: 50px;
+  border-radius: 6px;
+  border: 3px ;
+  
+}
+#product-image{
+  width: 300px;
+ height: 400px;
+top: 80px;
+left: 80px;
+border-radius: 10px;
+border: 1px;
+
+}
+.product-info{
+  width: 40%;
+  height: 70%;
+  align-items: start;
+  margin-left: 5%;
+  
+}
+.product-images{
+  border-right: 2px solid #ccc;
+  padding-right: 20px;
+
+}
+
+.product-images img {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.color-options {
+  display: flex;
+  margin-left: 10px;
+}
+
+.color-option {
+  width: 20px;
+}
+
+.thumbnails img {
+  width: 50px;
+  margin-right: 5px; 
+
+}
+
+.percentage-off {
+  color: red;
+}
+
+.color-selector {
+  white-space: nowrap; /* Make sure all elements stay in the same line */
+}
+
+.color-selector input[type="radio"] {
+  display: none; /* Hide the radio buttons */
+}
+
+.color-selector .color-option {
+  display: inline-block;
+  width: 30px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+  margin-right: 5px; /* Adjust spacing between color options */
+  border: 1px solid #ccc; /* Add border for visual separation */
+  cursor: pointer;
+}
+
+.color-selector .color-option:hover {
+  border: 2px solid #000; /* Adjust border color on hover */
+}
+
+/* Define colors for each option */
+.color-selector .color-option.yellow {
+  background-color: #ECDECC;
+}
+
+.color-selector .color-option.green {
+  background-color: #BBD278;
+}
+
+.color-selector .color-option.blue {
+  background-color: #BBC1F8;
+}
+
+.color-selector .color-option.pink {
+  background-color: #FFD3F8;
+}
+
+.size-selector {
+  margin-bottom: 20px;
+}
+
+.size-selector h4 {
+  margin-bottom: 5px;
+}
+#choice{
+  color: black;
+  background-color: #BBD278;
+  border-radius: 2%;
+}
+
+.size-selector input[type="radio"] {
+  display: none;
+}
+
+.size-selector label {
+  display: inline-block;
+  padding: 7px 10px;
+  border-radius: 8px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+.line {
+  border: none;
+  border-top: 2px solid #ccc; /* Grey color */
+  width: 100%; /* Adjust width as needed */
+}
+
+
+.size-selector input[type="radio"]:checked + label {
+  background-color: #F3F3F3;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-selector input[type="number"] {
+  width: 50px; /* Adjust width as needed */
+  text-align: center;
+  background-color: #ccc; /* Grey background */
+}
+
+.quantity-selector button {
+  background: #3A4980; /* Background color for buttons */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 20px; /* half of 40px (height of the button) */
+}
+
+.quantity-selector button:hover {
+  background: #29385E; /* Darker shade of blue on hover */
+}
+
+.add-to-cart, .cart-message {
+  width: 124px;
+  gap: 10px;
+  background: #3A4980;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.cart-message {
+  background-color: blue;
+  display: none;
+}
